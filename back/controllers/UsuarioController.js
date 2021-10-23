@@ -13,6 +13,7 @@ try {
 
     await usuario.save();
     resp.status(200).send({message: 'Usuario Creado'});
+    
 } catch (error) {
     console.log("ERROR CREANDO EL USUARIO");
     resp.status(500).send({message: 'Error al crear el usuario'});
